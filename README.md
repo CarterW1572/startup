@@ -23,9 +23,7 @@ I am using the required technologies in the following ways:
 
 - **HTML:** Will use correct HTML structure. Will have 3 HTML pages. One for login, one for viewing posts, and one for creating posts.
 - **CSS:** Good styling to make it look nice.
-- **JavaScript:**
-- **React:** 
-- **Web Service:** 
-- **Authentication:** 
-- **Database:** 
-- **WebSocket Data:** 
+- **JavaScript/React:** Will provide login, display others posts, allow you to react/RSVP to others posts.
+- **Service:** Backend service that allows for people to create posts for others to see, and react to other posts.
+- **Database/Login:** Stores users in a database. Ability to register and login users. Authentication required to create or see posts.
+- **WebSocket:** You will be notified of new posts by others, and they will be presented on your screen.
