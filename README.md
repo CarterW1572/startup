@@ -9,6 +9,9 @@ Notes can be found [here](notes.md).
 People who enjoy playing basketball sometimes don't have anyone available to play with when they want to start a game of pickup. "Pickup" is a web application that allows people to connect online and either host or join pickup games posted on the application. This way whenever you are bored and want to play some basketball, you can hop on Pickup and either look for games near you or create your own and invite others to join. You can make games only available for your friends, or for anyone on the app. 
 
 ### Design
+There will be 3 HTML pages, one for logging in, one for viewing other posts, and one for creating your own posts. This is a rough sketch of what these pages will look like:
+
+![alt text](20240914_122315.jpg)
 
 ### Key Features
 - Secure login over HTTPS
