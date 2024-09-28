@@ -30,3 +30,14 @@ I am using the required technologies in the following ways:
 - **Service:** Backend service that allows for people to create posts for others to see, and react to other posts.
 - **Database/Login:** Stores users in a database. Ability to register and login users. Authentication required to create or see posts.
 - **WebSocket:** You will be notified of new posts by others, and they will be presented on your screen.
+
+## HTML Deliverable
+Here is how I created the structure of my application in HTML:
+
+- **HTML Pages -** 5 HTML pages for login, home, settings, about, and creating posts.
+- **Links -** Links to home, login, about, and settings pages from all pages. Link to create posts from home page.
+- **Text -** About page contains text about the startup.
+- **Images -** Image included on the homepage.
+- **Login -** Input box and submit button for login.
+- **Databse -** User info stored in database. User database data displayed in Preferences page.
+- **WebSocket -** The home page will display current games created by other users, along with game info.
