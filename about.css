@@ -35,6 +35,7 @@ body {
     flex: 0 30px;
     padding-bottom: 1em;
     font-family: cursive;
+    background-color: rgb(94, 203, 253);
   }
 
   menu {
@@ -46,7 +47,7 @@ body {
   }
 
   .navbar {
-    background-color: blueviolet;
+    background-color: rgb(94, 203, 253);
   }
   
   .navbar-brand {

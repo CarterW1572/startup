@@ -24,6 +24,7 @@ body {
   footer {
     flex: 0 30px;
     padding-bottom: 1em;
+    background-color: rgb(94, 203, 253);
   }
 
   menu {
@@ -32,6 +33,10 @@ body {
     /*  overwrite Bootstrap so the menu does not wrap */
     flex-direction: row !important;
     list-style: none;
+  }
+
+  .navbar {
+    background-color: rgb(94, 203, 253);
   }
   
   .navbar-brand {
