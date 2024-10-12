@@ -23,6 +23,7 @@ body {
   
   footer {
     flex: 0 30px;
+    padding-bottom: 1em;
   }
 
   menu {

@@ -2,11 +2,16 @@ body {
     display: flex;
     flex-direction: column;
     min-width: 375px;
+    /*background-image: url("https://cdn.vectorstock.com/i/500p/79/05/basketball-vector-18437905.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
   }
   
   header {
     flex: 0 80px;
     font-weight: bold;
+    font-family: cursive;
   }
   
   main {
@@ -15,10 +20,21 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-family: cursive;
+  }
+
+  h2 {
+    font-weight: bold;
+  }
+
+  text {
+    padding: 0 7em;
   }
   
   footer {
     flex: 0 30px;
+    padding-bottom: 1em;
+    font-family: cursive;
   }
 
   menu {
@@ -27,6 +43,10 @@ body {
     /*  overwrite Bootstrap so the menu does not wrap */
     flex-direction: row !important;
     list-style: none;
+  }
+
+  .navbar {
+    background-color: blueviolet;
   }
   
   .navbar-brand {
@@ -40,6 +60,11 @@ body {
   
   footer a {
     float: right;
+    padding: 0 0.75em;
+  }
+
+  footer span {
+    padding: 0 0.75em;
   }
 
   @media (max-height: 600px) {
