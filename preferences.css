@@ -15,7 +15,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     font-family: cursive;
   }
   
@@ -32,11 +32,6 @@ body {
     /*  overwrite Bootstrap so the menu does not wrap */
     flex-direction: row !important;
     list-style: none;
-  }
-
-  main table {
-    padding: 0 1em;
-    display: flex;
   }
 
   .navbar {

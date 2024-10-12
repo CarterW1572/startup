@@ -5,20 +5,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Ball is Life - Preferences</title>
         <link rel="icon" href="favicon.ico" />
+
+        <link rel="stylesheet" href="preferences.css" />
+
+        <!-- Include bootstrap CSS framework -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+            crossorigin="anonymous"
+        />
     </head>
 
     <body>
         <header>
-            <h1>Ball is Life<sup>&reg;</sup></h1>
-            <nav>
-                <div>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="preferences.html">Preferences</a></li>
-                </div>
+            <nav class="navbar fixed-top">
+                <a class="navbar-brand">Ball is Life<sup>&reg;</sup></a>
+                <menu class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="preferences.html">Preferences</a></li>
+                </menu>
             </nav>
-            <hr />
+            <br />
         </header>
 
         <main>
@@ -29,21 +39,23 @@
                 (will display user data such as username)
             </div>
             <br />
-            <fieldset>
-                <legend>View</legend>
-                <label for="radio1">All games</label>
-                <input type="radio" id="radio1" name="varRadio" value="radio1" checked />
-                <label for="radio2">Friends only</label>
-                <input type="radio" id="radio2" name="varRadio" value="radio2" />
-            </fieldset>
+            <div class="form-group">
+                <label for="sel1">View:</label>
+                <select class="form-control" id="sel1">
+                    <option disabled selected>Select view</option>
+                    <option>All games</option>
+                    <option>Friends only</option>
+                </select>
+            </div>
+            <br />
+            <button class="btn btn-primary">Apply</button>
             <br />
         </main>
 
         <footer>
-            <hr />
-            <span class="text-reset">Created by Carter Williams</span>
             <br />
-            <span class="text-reset">Source Code: </span><a href="https://github.com/CarterW1572/startup">GitHub</a>
+            <span class="text-reset">Created by Carter Williams</span>
+            <a href="https://github.com/CarterW1572/startup">GitHub</a>
         </footer>
 
     </body>
