@@ -7,6 +7,7 @@ body {
   header {
     flex: 0 80px;
     font-weight: bold;
+    font-family: cursive;
   }
   
   main {
@@ -15,12 +16,14 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    font-family: cursive;
   }
   
   footer {
     flex: 0 30px;
     padding-bottom: 1em;
     background-color: rgb(94, 203, 253);
+    font-family: cursive;
   }
 
   menu {
@@ -46,6 +49,11 @@ body {
   
   footer a {
     float: right;
+    padding: 0 0.75em;
+  }
+
+  footer span {
+    padding: 0 0.75em;
   }
 
   @media (max-height: 600px) {
