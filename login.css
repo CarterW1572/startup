@@ -16,6 +16,10 @@ body {
     align-items: center;
     justify-content: center;
   }
+
+  form {
+    padding-top: 0.5em;
+  }
   
   footer {
     flex: 0 30px;
