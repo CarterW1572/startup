@@ -41,3 +41,13 @@ Here is how I created the structure of my application in HTML:
 - **Login -** Input box and submit button for login.
 - **Databse -** User info stored in database. User database data displayed in Preferences page.
 - **WebSocket -** The home page will display current games created by other users, along with game info.
+
+## CSS Deliverable
+Here is how I designed the appearance my application using CSS:
+
+- **Header, Footer, and Main Content -** Added background colors, changed fonts and font sizes, changed spacing, etc.
+- **Navigation Elements -** Fixed the navigation bar on top of the screen so that it follows the page when scrolling, formatted text as to not look like links
+- **Responsive -** Used flex to make the webpage responsive to different size screens
+- **Application Elements -** Formatted all elements to have good spacing and contrast, everything is easy to see and read
+- **Text Content -** Font is consitent
+- **Image Content -** Images are formatted to have rounded edges or be circular in shape
