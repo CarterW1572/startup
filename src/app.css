@@ -2,4 +2,73 @@
     display: flex;
     flex-direction: column;
     min-width: 375px;
-  }
+}
+  
+header {
+    flex: 0 80px;
+    font-weight: bold;
+    font-family: cursive;
+}
+  
+main {
+    flex: 1 calc(100vh - 110px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-family: cursive;
+}
+  
+footer {
+    flex: 0 30px;
+    padding-bottom: 1em;
+    background-color: rgb(94, 203, 253);
+    font-family: cursive;
+}
+
+menu {
+    flex: 1;
+    display: flex;
+    /*  overwrite Bootstrap so the menu does not wrap */
+    flex-direction: row !important;
+    list-style: none;
+}
+
+main table {
+    padding: 0 1em;
+    display: flex;
+}
+
+.navbar {
+    background-color: rgb(94, 203, 253);
+}
+  
+.navbar-brand {
+    padding-left: 0.3em;
+    border-bottom: solid rgb(182, 182, 182) thin;
+}
+  
+menu .nav-item {
+    padding: 0 0.3em;
+}
+  
+footer a {
+    float: right;
+    padding: 0 0.75em;
+}
+
+footer span {
+    padding: 0 0.75em;
+}
+
+@media (max-height: 600px) {
+    header {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+    main {
+        flex: 1 100vh;
+    }
+}  
