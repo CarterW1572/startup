@@ -1,7 +1,15 @@
 import React from 'react';
+import { Button } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import './post.css';
 
 export function Post() {
+    const navigate = useNavigate();
+  
+    const handleClick = () => {
+      navigate('/');
+    };
+
     return (
         <main>
             <h2>Create Game</h2>
@@ -27,9 +35,7 @@ export function Post() {
                 </select>
             </div>
             <br />
-            <form method="get" action="index.html">
-                <button type="submit" class="btn btn-primary">Create</button>
-            </form>
+            <Button variant='primary' onClick={handleClick}>Create</Button>
             <br />
         </main>
     );

@@ -8,7 +8,7 @@ import { Preferences } from './preferences/preferences';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
 
-export default function App() {
+function App() {
     return (
     <BrowserRouter>
     <div className='body bg-light text-dark'>
@@ -17,7 +17,7 @@ export default function App() {
                 <a className="navbar-brand">Ball is Life<sup>&reg;</sup></a>
                 <menu className="navbar-nav">
                     <li className="nav-item"><NavLink className='nav-link' to='login'>Login</NavLink></li>
-                    <li className="nav-item"><NavLink className='nav-link active' to='home'>Home</NavLink></li>
+                    <li className="nav-item"><NavLink className='nav-link active' to=''>Home</NavLink></li>
                     <li className="nav-item"><NavLink className='nav-link' to='about'>About</NavLink></li>
                     <li className="nav-item"><NavLink className='nav-link' to='preferences'>Preferences</NavLink></li>
                 </menu>
@@ -42,3 +42,5 @@ export default function App() {
     </BrowserRouter>
 );
 }
+
+export default App;
