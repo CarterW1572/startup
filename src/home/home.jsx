@@ -1,4 +1,6 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './home.css';
 
 export function Home() {
@@ -20,9 +22,7 @@ export function Home() {
             </tr>
         </table>
         <br />
-        <form method="get" action="post.html">
-            <button type="submit" class="btn btn-primary">Create Game</button>
-        </form>
+        <NavLink className='nav-link' to='post'>Create Game</NavLink>
         <br />
     </main>
   );
