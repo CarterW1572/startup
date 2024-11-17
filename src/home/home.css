@@ -34,6 +34,12 @@ body {
     list-style: none;
   }
 
+  main span {
+    padding: 0 1em;
+    font-size: larger;
+    font-weight: bolder;
+  }
+
   main table {
     padding: 0 1em;
     display: flex;
