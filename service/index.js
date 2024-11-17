@@ -21,9 +21,9 @@ app.use(`/api`, apiRouter);
 
 var testData = {test:'testData'};
 apiRouter.get('/test', (_req, res) => {
-    console.log("Testing")
+    console.log("Testing");
     res.send({test:'testData'});
-})
+});
 
 // CreateAuth a new user
 apiRouter.post('/auth/create', async (req, res) => {

@@ -27,7 +27,7 @@ export function Login() {
         });
         if (response?.status === 200) {
           localStorage.setItem('userName', userName);
-          props.onLogin(userName);
+          navigate('/');
         } else {
           const body = await response.json();
           setDisplayError(`⚠ Error: ${body.msg}`);
