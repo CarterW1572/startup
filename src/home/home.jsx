@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { Button } from 'react-bootstrap';
 import './home.css';
@@ -10,15 +9,6 @@ export function Home() {
 
     function createGame() {
         navigate('/post');
-    }
-
-    function test() {
-        console.log("Button clicked");
-        fetch('/api/test')
-            .then((response) => response.json())
-            .then((testing) => {
-                console.log(testing.test);
-            });
     }
 
     function getWeather() {
@@ -51,7 +41,6 @@ export function Home() {
                 </tbody>
             </table>
             <br />
-            <Button onClick={test}>Test</Button>
             <Button variant='primary' onClick={createGame}>Create Game</Button>
             <br />
         </main>

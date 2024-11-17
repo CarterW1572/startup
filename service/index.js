@@ -19,12 +19,6 @@ app.use(express.static('public'));
 var apiRouter = express.Router();
 app.use(`/api`, apiRouter);
 
-var testData = {test:'testData'};
-apiRouter.get('/test', (_req, res) => {
-    console.log("Testing");
-    res.send({test:'testData'});
-});
-
 // CreateAuth a new user
 apiRouter.post('/auth/create', async (req, res) => {
   const user = users[req.body.email];
