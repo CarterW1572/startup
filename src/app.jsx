@@ -17,7 +17,7 @@ function App() {
                 <a className="navbar-brand">Ball is Life<sup>&reg;</sup></a>
                 <menu className="navbar-nav">
                     <li className="nav-item"><NavLink className='nav-link' to='login'>Login</NavLink></li>
-                    <li className="nav-item"><NavLink className='nav-link active' to=''>Home</NavLink></li>
+                    <li className="nav-item"><NavLink className='nav-link' to=''>Home</NavLink></li>
                     <li className="nav-item"><NavLink className='nav-link' to='about'>About</NavLink></li>
                     <li className="nav-item"><NavLink className='nav-link' to='preferences'>Preferences</NavLink></li>
                 </menu>
