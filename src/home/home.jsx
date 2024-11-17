@@ -22,13 +22,14 @@ export function Home() {
             });
     }
 
+    React.useEffect(() => {getWeather();});
+
     return (
         <main>
             <h2>Welcome to Ball is Life</h2>
             <img alt="ball" src="https://cdn.vectorstock.com/i/500p/79/05/basketball-vector-18437905.jpg" className="rounded" width="300"/>
             <br />
             <span>{weather}°</span>
-            <Button onClick={getWeather}>Weather</Button>
             <br />
             <table>
                 <thead>
