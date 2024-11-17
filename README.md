@@ -57,3 +57,12 @@ I converted my startup to Javascript and React:
 
 - **Bundled and transpiled**
 - **Router -** Routing between different pages and from Home to creating a post
+
+## Service Deliverable
+I added backend endpoints to my application:
+
+- **Node.JS/Express Service**
+- **Static Middleware**
+- **Calls to 3rd Party Endpoint -** Added a weather API
+- **Backend Service Endpoints -** Endpoints for login
+- **Frontend Calls Service Endpoints**
