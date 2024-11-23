@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
+import { Message } from './message';
 import './login.css';
 
 export function Login() {
@@ -48,6 +49,9 @@ export function Login() {
             </div>
             <Button variant='primary' onClick={() => loginUser()} disabled={!userName || !password}>Login</Button>
             <Button variant='primary' onClick={() => createUser()} disabled={!userName || !password}>Create</Button>
+            <br />
+
+            <MessageDialog message={displayError} onHide={() => setDisplayError(null)} />
         </main>
     );
 }
