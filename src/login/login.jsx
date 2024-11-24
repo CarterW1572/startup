@@ -51,7 +51,7 @@ export function Login() {
             <Button variant='primary' onClick={() => createUser()} disabled={!userName || !password}>Create</Button>
             <br />
 
-            <MessageDialog message={displayError} onHide={() => setDisplayError(null)} />
+            <Message message={displayError} onHide={() => setDisplayError(null)} />
         </main>
     );
 }
