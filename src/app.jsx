@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, NavLink, Route, Routes } from 'react-router-dom';
 import { Login } from './login/login';
+import { AuthState } from './login/authState'
 import { Home } from './home/home';
 import { About } from './about/about';
 import { Post } from './post/post';
@@ -9,6 +10,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './app.css';
 
 function App() {
+    const [userName, setUserName] = React.useState(localStorage.getItem('userName') || '');
+    const currentAuthState = userName ? AuthState.Authenticated : AuthState.Unauthenticated;
+    const [authState, setAuthState] = React.useState(currentAuthState);
+
     return (
     <BrowserRouter>
     <div className='body bg-light text-dark'>
@@ -27,7 +32,7 @@ function App() {
 
         <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/login' element={<Login />} />
+            <Route path='/login' element={<Login userName={userName} authState={authState} onAuthChange={(userName, authState) => {setAuthState(authState); setUserName(userName);}}/>} />
             <Route path='/about' element={<About />} />
             <Route path='/post' element={<Post />} />
             <Route path='/preferences' element={<Preferences />} />
