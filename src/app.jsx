@@ -22,9 +22,9 @@ function App() {
                 <a className="navbar-brand">Ball is Life<sup>&reg;</sup></a>
                 <menu className="navbar-nav">
                     <li className="nav-item"><NavLink className='nav-link' to='login'>Login</NavLink></li>
-                    <li className="nav-item"><NavLink className='nav-link' to=''>Home</NavLink></li>
+                    {authState === AuthState.Authenticated && (<li className="nav-item"><NavLink className='nav-link' to=''>Home</NavLink></li>)}
                     <li className="nav-item"><NavLink className='nav-link' to='about'>About</NavLink></li>
-                    <li className="nav-item"><NavLink className='nav-link' to='preferences'>Preferences</NavLink></li>
+                    {authState === AuthState.Authenticated && (<li className="nav-item"><NavLink className='nav-link' to='preferences'>Preferences</NavLink></li>)}
                 </menu>
             </nav>
             <br />
@@ -32,7 +32,8 @@ function App() {
 
         <Routes>
             <Route path='/' element={<Home />} />
-            <Route path='/login' element={<Login userName={userName} authState={authState} onAuthChange={(userName, authState) => {setAuthState(authState); setUserName(userName);}}/>} />
+            <Route path='/login' element={<Login userName={userName} authState={authState} onAuthChange={(userName, authState) => {setAuthState(authState);
+                setUserName(userName);}}/>} />
             <Route path='/about' element={<About />} />
             <Route path='/post' element={<Post />} />
             <Route path='/preferences' element={<Preferences />} />

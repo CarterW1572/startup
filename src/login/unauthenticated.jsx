@@ -4,9 +4,9 @@ import { useNavigate } from 'react-router-dom';
 import { Message } from './message';
 import './login.css';
 
-export function Unauthenticated() {
+export function Unauthenticated(props) {
     const navigate = useNavigate();
-    const [userName, setUserName] = React.useState('');
+    const [userName, setUserName] = React.useState(props.userName);
     const [password, setPassword] = React.useState('');
     const [displayError, setDisplayError] = React.useState(null);
   
@@ -28,6 +28,7 @@ export function Unauthenticated() {
         });
         if (response?.status === 200) {
           localStorage.setItem('userName', userName);
+          props.onLogin(userName);
           navigate('/');
         } else {
           const body = await response.json();
@@ -37,7 +38,7 @@ export function Unauthenticated() {
 
     return (
         <main>
-            <h2>Login</h2>
+            <h1>Login</h1>
             <span>If you don't have a login, you can also create a login here</span>
             <div className='input-group mb-3'>
                 <span className='input-group-text'>username</span>

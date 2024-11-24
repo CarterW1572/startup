@@ -23,6 +23,7 @@ export function Authenticated(props) {
 
   return (
     <div>
+      <h1>Welcome to Ball is Life</h1>
       <h2>{props.userName}</h2>
       <br />
       <Button variant='primary' onClick={() => navigate('/')}>

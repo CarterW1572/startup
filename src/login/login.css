@@ -38,6 +38,10 @@ body {
     list-style: none;
   }
 
+  h2 {
+    color: green;
+  }
+
   .navbar {
     background-color: rgb(94, 203, 253);
   }
@@ -61,7 +65,7 @@ body {
   }
 
   Button {
-    padding: 0.3em;
+    padding: 0 0.3em;
   }
 
   @media (max-height: 600px) {
