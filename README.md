@@ -66,3 +66,12 @@ I added backend endpoints to my application:
 - **Calls to 3rd Party Endpoint -** Added a weather API
 - **Backend Service Endpoints -** Endpoints for login
 - **Frontend Calls Service Endpoints**
+
+## DB/Login Deliverable
+I gave the application login functionality:
+
+- **MongoDB Atlas Database created and connected to the startup**
+- **Data stored in MongoDB database**
+- **User registration -** Creates a new user in the database
+- **Login -** Finds existing user in the database and verifies login info
+- **Restricts functionality -** You can't access most of the application unless you've logged in
