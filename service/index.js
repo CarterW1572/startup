@@ -1,7 +1,6 @@
 const cookieParser = require('cookie-parser');
 const bcrypt = require('bcrypt');
 const express = require('express');
-const uuid = require('uuid');
 const app = express();
 const DB = require('./database.js');
 
@@ -75,9 +74,14 @@ secureApiRouter.use(async (req, res, next) => {
   }
 });
 
+// Default error handler
+app.use(function (err, req, res, next) {
+  res.status(500).send({ type: err.name, message: err.message });
+});
+
 app.use((_req, res) => {
     res.sendFile('index.html', { root: 'public' });
-  });
+});
 
 // setAuthCookie in the HTTP response
 function setAuthCookie(res, authToken) {
@@ -90,4 +94,4 @@ function setAuthCookie(res, authToken) {
 
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);
-  });
+});
